@@ -51,14 +51,27 @@ char *cmp_str(char *str, int start_i, char *need) {
     return NULL;
 }
 
+int cpy_str(char *src, char *dest) {
+    if (src == NULL) return 0;
+    while ((*src = *dest) != 0);
+    return 1;
+}
+
 void lex(char *in, vector_t *out) {
+    // const char inbetweens = {"=", "+"};
+    // int size = 2;
+    
+    const char *inbetweens    = "=+-";
+    const int  *betweens_size = {1, 1, 1};
+
+
     unsigned dat_i = 0;
     unsigned len = strlen(in);
 
     token_t *token = malloc(sizeof(token_t));
     token->token = malloc(256);
 
-    int i;
+    int i, j;
     for (i = 0; i < len; i++) {
         if (is_space(in[i])) {
             token->type = 0;
@@ -68,10 +81,14 @@ void lex(char *in, vector_t *out) {
             dat_i = 0;
         }
         else {
-            if (cmp_str(in, i, "=") ||
-                cmp_str(in, i, "+") {
+            char tok2[4];
 
+            for (j = 0; j < 2; j++) {
+                if (cpy_str(cmp_str(in, i, [j]), tok2)) {
+                    vector_add(out, tok2);
+                }
             }
+
             token->token[dat_i++] = in[i];
         }
     }

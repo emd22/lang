@@ -11,7 +11,7 @@ int main() {
     char in[255];
     vector_t out;
 
-    strcpy(in, "let x1 = 4\n");
+    strcpy(in, "let x1=4\n");
 
     vector_init(&out);
     tokens_set(&out);

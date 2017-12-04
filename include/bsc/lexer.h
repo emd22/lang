@@ -13,6 +13,11 @@ typedef struct {
     vector_t *tokens;
 } tokens_t;
 
+typedef struct {
+    char *data;
+    int size;
+} between_t;
+
 void tokens_set(vector_t *tokens);
 char *tokens_peek();
 char *tokens_read();
