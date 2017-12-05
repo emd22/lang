@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/ethan/Desktop/bsc/src
+CMAKE_SOURCE_DIR = /home/ethan/lang/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/ethan/Desktop/bsc/build
+CMAKE_BINARY_DIR = /home/ethan/lang/build
 
 # Include any dependencies generated for this target.
 include CMakeFiles/bsc.dir/depend.make
@@ -58,17 +58,17 @@ include CMakeFiles/bsc.dir/progress.make
 include CMakeFiles/bsc.dir/flags.make
 
 CMakeFiles/bsc.dir/bsc/vector.c.o: CMakeFiles/bsc.dir/flags.make
-CMakeFiles/bsc.dir/bsc/vector.c.o: /home/ethan/Desktop/bsc/src/bsc/vector.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ethan/Desktop/bsc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/bsc.dir/bsc/vector.c.o"
-	/usr/bin/cc  $(C_DEFINES) -D__FILENAME__=vector.c $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/bsc.dir/bsc/vector.c.o   -c /home/ethan/Desktop/bsc/src/bsc/vector.c
+CMakeFiles/bsc.dir/bsc/vector.c.o: /home/ethan/lang/src/bsc/vector.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ethan/lang/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/bsc.dir/bsc/vector.c.o"
+	/usr/bin/cc  $(C_DEFINES) -D__FILENAME__=vector.c $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/bsc.dir/bsc/vector.c.o   -c /home/ethan/lang/src/bsc/vector.c
 
 CMakeFiles/bsc.dir/bsc/vector.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/bsc.dir/bsc/vector.c.i"
-	/usr/bin/cc  $(C_DEFINES) -D__FILENAME__=vector.c $(C_INCLUDES) $(C_FLAGS) -E /home/ethan/Desktop/bsc/src/bsc/vector.c > CMakeFiles/bsc.dir/bsc/vector.c.i
+	/usr/bin/cc  $(C_DEFINES) -D__FILENAME__=vector.c $(C_INCLUDES) $(C_FLAGS) -E /home/ethan/lang/src/bsc/vector.c > CMakeFiles/bsc.dir/bsc/vector.c.i
 
 CMakeFiles/bsc.dir/bsc/vector.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/bsc.dir/bsc/vector.c.s"
-	/usr/bin/cc  $(C_DEFINES) -D__FILENAME__=vector.c $(C_INCLUDES) $(C_FLAGS) -S /home/ethan/Desktop/bsc/src/bsc/vector.c -o CMakeFiles/bsc.dir/bsc/vector.c.s
+	/usr/bin/cc  $(C_DEFINES) -D__FILENAME__=vector.c $(C_INCLUDES) $(C_FLAGS) -S /home/ethan/lang/src/bsc/vector.c -o CMakeFiles/bsc.dir/bsc/vector.c.s
 
 CMakeFiles/bsc.dir/bsc/vector.c.o.requires:
 
@@ -81,18 +81,90 @@ CMakeFiles/bsc.dir/bsc/vector.c.o.provides: CMakeFiles/bsc.dir/bsc/vector.c.o.re
 CMakeFiles/bsc.dir/bsc/vector.c.o.provides.build: CMakeFiles/bsc.dir/bsc/vector.c.o
 
 
+CMakeFiles/bsc.dir/bsc/lexer.c.o: CMakeFiles/bsc.dir/flags.make
+CMakeFiles/bsc.dir/bsc/lexer.c.o: /home/ethan/lang/src/bsc/lexer.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ethan/lang/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/bsc.dir/bsc/lexer.c.o"
+	/usr/bin/cc  $(C_DEFINES) -D__FILENAME__=lexer.c $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/bsc.dir/bsc/lexer.c.o   -c /home/ethan/lang/src/bsc/lexer.c
+
+CMakeFiles/bsc.dir/bsc/lexer.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/bsc.dir/bsc/lexer.c.i"
+	/usr/bin/cc  $(C_DEFINES) -D__FILENAME__=lexer.c $(C_INCLUDES) $(C_FLAGS) -E /home/ethan/lang/src/bsc/lexer.c > CMakeFiles/bsc.dir/bsc/lexer.c.i
+
+CMakeFiles/bsc.dir/bsc/lexer.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/bsc.dir/bsc/lexer.c.s"
+	/usr/bin/cc  $(C_DEFINES) -D__FILENAME__=lexer.c $(C_INCLUDES) $(C_FLAGS) -S /home/ethan/lang/src/bsc/lexer.c -o CMakeFiles/bsc.dir/bsc/lexer.c.s
+
+CMakeFiles/bsc.dir/bsc/lexer.c.o.requires:
+
+.PHONY : CMakeFiles/bsc.dir/bsc/lexer.c.o.requires
+
+CMakeFiles/bsc.dir/bsc/lexer.c.o.provides: CMakeFiles/bsc.dir/bsc/lexer.c.o.requires
+	$(MAKE) -f CMakeFiles/bsc.dir/build.make CMakeFiles/bsc.dir/bsc/lexer.c.o.provides.build
+.PHONY : CMakeFiles/bsc.dir/bsc/lexer.c.o.provides
+
+CMakeFiles/bsc.dir/bsc/lexer.c.o.provides.build: CMakeFiles/bsc.dir/bsc/lexer.c.o
+
+
+CMakeFiles/bsc.dir/bsc/parser.c.o: CMakeFiles/bsc.dir/flags.make
+CMakeFiles/bsc.dir/bsc/parser.c.o: /home/ethan/lang/src/bsc/parser.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ethan/lang/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/bsc.dir/bsc/parser.c.o"
+	/usr/bin/cc  $(C_DEFINES) -D__FILENAME__=parser.c $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/bsc.dir/bsc/parser.c.o   -c /home/ethan/lang/src/bsc/parser.c
+
+CMakeFiles/bsc.dir/bsc/parser.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/bsc.dir/bsc/parser.c.i"
+	/usr/bin/cc  $(C_DEFINES) -D__FILENAME__=parser.c $(C_INCLUDES) $(C_FLAGS) -E /home/ethan/lang/src/bsc/parser.c > CMakeFiles/bsc.dir/bsc/parser.c.i
+
+CMakeFiles/bsc.dir/bsc/parser.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/bsc.dir/bsc/parser.c.s"
+	/usr/bin/cc  $(C_DEFINES) -D__FILENAME__=parser.c $(C_INCLUDES) $(C_FLAGS) -S /home/ethan/lang/src/bsc/parser.c -o CMakeFiles/bsc.dir/bsc/parser.c.s
+
+CMakeFiles/bsc.dir/bsc/parser.c.o.requires:
+
+.PHONY : CMakeFiles/bsc.dir/bsc/parser.c.o.requires
+
+CMakeFiles/bsc.dir/bsc/parser.c.o.provides: CMakeFiles/bsc.dir/bsc/parser.c.o.requires
+	$(MAKE) -f CMakeFiles/bsc.dir/build.make CMakeFiles/bsc.dir/bsc/parser.c.o.provides.build
+.PHONY : CMakeFiles/bsc.dir/bsc/parser.c.o.provides
+
+CMakeFiles/bsc.dir/bsc/parser.c.o.provides.build: CMakeFiles/bsc.dir/bsc/parser.c.o
+
+
+CMakeFiles/bsc.dir/bsc/keywords/let.c.o: CMakeFiles/bsc.dir/flags.make
+CMakeFiles/bsc.dir/bsc/keywords/let.c.o: /home/ethan/lang/src/bsc/keywords/let.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ethan/lang/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/bsc.dir/bsc/keywords/let.c.o"
+	/usr/bin/cc  $(C_DEFINES) -D__FILENAME__=let.c $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/bsc.dir/bsc/keywords/let.c.o   -c /home/ethan/lang/src/bsc/keywords/let.c
+
+CMakeFiles/bsc.dir/bsc/keywords/let.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/bsc.dir/bsc/keywords/let.c.i"
+	/usr/bin/cc  $(C_DEFINES) -D__FILENAME__=let.c $(C_INCLUDES) $(C_FLAGS) -E /home/ethan/lang/src/bsc/keywords/let.c > CMakeFiles/bsc.dir/bsc/keywords/let.c.i
+
+CMakeFiles/bsc.dir/bsc/keywords/let.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/bsc.dir/bsc/keywords/let.c.s"
+	/usr/bin/cc  $(C_DEFINES) -D__FILENAME__=let.c $(C_INCLUDES) $(C_FLAGS) -S /home/ethan/lang/src/bsc/keywords/let.c -o CMakeFiles/bsc.dir/bsc/keywords/let.c.s
+
+CMakeFiles/bsc.dir/bsc/keywords/let.c.o.requires:
+
+.PHONY : CMakeFiles/bsc.dir/bsc/keywords/let.c.o.requires
+
+CMakeFiles/bsc.dir/bsc/keywords/let.c.o.provides: CMakeFiles/bsc.dir/bsc/keywords/let.c.o.requires
+	$(MAKE) -f CMakeFiles/bsc.dir/build.make CMakeFiles/bsc.dir/bsc/keywords/let.c.o.provides.build
+.PHONY : CMakeFiles/bsc.dir/bsc/keywords/let.c.o.provides
+
+CMakeFiles/bsc.dir/bsc/keywords/let.c.o.provides.build: CMakeFiles/bsc.dir/bsc/keywords/let.c.o
+
+
 CMakeFiles/bsc.dir/bsc/main.c.o: CMakeFiles/bsc.dir/flags.make
-CMakeFiles/bsc.dir/bsc/main.c.o: /home/ethan/Desktop/bsc/src/bsc/main.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ethan/Desktop/bsc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/bsc.dir/bsc/main.c.o"
-	/usr/bin/cc  $(C_DEFINES) -D__FILENAME__=main.c $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/bsc.dir/bsc/main.c.o   -c /home/ethan/Desktop/bsc/src/bsc/main.c
+CMakeFiles/bsc.dir/bsc/main.c.o: /home/ethan/lang/src/bsc/main.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ethan/lang/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object CMakeFiles/bsc.dir/bsc/main.c.o"
+	/usr/bin/cc  $(C_DEFINES) -D__FILENAME__=main.c $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/bsc.dir/bsc/main.c.o   -c /home/ethan/lang/src/bsc/main.c
 
 CMakeFiles/bsc.dir/bsc/main.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/bsc.dir/bsc/main.c.i"
-	/usr/bin/cc  $(C_DEFINES) -D__FILENAME__=main.c $(C_INCLUDES) $(C_FLAGS) -E /home/ethan/Desktop/bsc/src/bsc/main.c > CMakeFiles/bsc.dir/bsc/main.c.i
+	/usr/bin/cc  $(C_DEFINES) -D__FILENAME__=main.c $(C_INCLUDES) $(C_FLAGS) -E /home/ethan/lang/src/bsc/main.c > CMakeFiles/bsc.dir/bsc/main.c.i
 
 CMakeFiles/bsc.dir/bsc/main.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/bsc.dir/bsc/main.c.s"
-	/usr/bin/cc  $(C_DEFINES) -D__FILENAME__=main.c $(C_INCLUDES) $(C_FLAGS) -S /home/ethan/Desktop/bsc/src/bsc/main.c -o CMakeFiles/bsc.dir/bsc/main.c.s
+	/usr/bin/cc  $(C_DEFINES) -D__FILENAME__=main.c $(C_INCLUDES) $(C_FLAGS) -S /home/ethan/lang/src/bsc/main.c -o CMakeFiles/bsc.dir/bsc/main.c.s
 
 CMakeFiles/bsc.dir/bsc/main.c.o.requires:
 
@@ -106,17 +178,17 @@ CMakeFiles/bsc.dir/bsc/main.c.o.provides.build: CMakeFiles/bsc.dir/bsc/main.c.o
 
 
 CMakeFiles/bsc.dir/bsc/keywords.c.o: CMakeFiles/bsc.dir/flags.make
-CMakeFiles/bsc.dir/bsc/keywords.c.o: /home/ethan/Desktop/bsc/src/bsc/keywords.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ethan/Desktop/bsc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/bsc.dir/bsc/keywords.c.o"
-	/usr/bin/cc  $(C_DEFINES) -D__FILENAME__=keywords.c $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/bsc.dir/bsc/keywords.c.o   -c /home/ethan/Desktop/bsc/src/bsc/keywords.c
+CMakeFiles/bsc.dir/bsc/keywords.c.o: /home/ethan/lang/src/bsc/keywords.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ethan/lang/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object CMakeFiles/bsc.dir/bsc/keywords.c.o"
+	/usr/bin/cc  $(C_DEFINES) -D__FILENAME__=keywords.c $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/bsc.dir/bsc/keywords.c.o   -c /home/ethan/lang/src/bsc/keywords.c
 
 CMakeFiles/bsc.dir/bsc/keywords.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/bsc.dir/bsc/keywords.c.i"
-	/usr/bin/cc  $(C_DEFINES) -D__FILENAME__=keywords.c $(C_INCLUDES) $(C_FLAGS) -E /home/ethan/Desktop/bsc/src/bsc/keywords.c > CMakeFiles/bsc.dir/bsc/keywords.c.i
+	/usr/bin/cc  $(C_DEFINES) -D__FILENAME__=keywords.c $(C_INCLUDES) $(C_FLAGS) -E /home/ethan/lang/src/bsc/keywords.c > CMakeFiles/bsc.dir/bsc/keywords.c.i
 
 CMakeFiles/bsc.dir/bsc/keywords.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/bsc.dir/bsc/keywords.c.s"
-	/usr/bin/cc  $(C_DEFINES) -D__FILENAME__=keywords.c $(C_INCLUDES) $(C_FLAGS) -S /home/ethan/Desktop/bsc/src/bsc/keywords.c -o CMakeFiles/bsc.dir/bsc/keywords.c.s
+	/usr/bin/cc  $(C_DEFINES) -D__FILENAME__=keywords.c $(C_INCLUDES) $(C_FLAGS) -S /home/ethan/lang/src/bsc/keywords.c -o CMakeFiles/bsc.dir/bsc/keywords.c.s
 
 CMakeFiles/bsc.dir/bsc/keywords.c.o.requires:
 
@@ -129,99 +201,27 @@ CMakeFiles/bsc.dir/bsc/keywords.c.o.provides: CMakeFiles/bsc.dir/bsc/keywords.c.
 CMakeFiles/bsc.dir/bsc/keywords.c.o.provides.build: CMakeFiles/bsc.dir/bsc/keywords.c.o
 
 
-CMakeFiles/bsc.dir/bsc/keywords/let.c.o: CMakeFiles/bsc.dir/flags.make
-CMakeFiles/bsc.dir/bsc/keywords/let.c.o: /home/ethan/Desktop/bsc/src/bsc/keywords/let.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ethan/Desktop/bsc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/bsc.dir/bsc/keywords/let.c.o"
-	/usr/bin/cc  $(C_DEFINES) -D__FILENAME__=let.c $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/bsc.dir/bsc/keywords/let.c.o   -c /home/ethan/Desktop/bsc/src/bsc/keywords/let.c
-
-CMakeFiles/bsc.dir/bsc/keywords/let.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/bsc.dir/bsc/keywords/let.c.i"
-	/usr/bin/cc  $(C_DEFINES) -D__FILENAME__=let.c $(C_INCLUDES) $(C_FLAGS) -E /home/ethan/Desktop/bsc/src/bsc/keywords/let.c > CMakeFiles/bsc.dir/bsc/keywords/let.c.i
-
-CMakeFiles/bsc.dir/bsc/keywords/let.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/bsc.dir/bsc/keywords/let.c.s"
-	/usr/bin/cc  $(C_DEFINES) -D__FILENAME__=let.c $(C_INCLUDES) $(C_FLAGS) -S /home/ethan/Desktop/bsc/src/bsc/keywords/let.c -o CMakeFiles/bsc.dir/bsc/keywords/let.c.s
-
-CMakeFiles/bsc.dir/bsc/keywords/let.c.o.requires:
-
-.PHONY : CMakeFiles/bsc.dir/bsc/keywords/let.c.o.requires
-
-CMakeFiles/bsc.dir/bsc/keywords/let.c.o.provides: CMakeFiles/bsc.dir/bsc/keywords/let.c.o.requires
-	$(MAKE) -f CMakeFiles/bsc.dir/build.make CMakeFiles/bsc.dir/bsc/keywords/let.c.o.provides.build
-.PHONY : CMakeFiles/bsc.dir/bsc/keywords/let.c.o.provides
-
-CMakeFiles/bsc.dir/bsc/keywords/let.c.o.provides.build: CMakeFiles/bsc.dir/bsc/keywords/let.c.o
-
-
-CMakeFiles/bsc.dir/bsc/parser.c.o: CMakeFiles/bsc.dir/flags.make
-CMakeFiles/bsc.dir/bsc/parser.c.o: /home/ethan/Desktop/bsc/src/bsc/parser.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ethan/Desktop/bsc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object CMakeFiles/bsc.dir/bsc/parser.c.o"
-	/usr/bin/cc  $(C_DEFINES) -D__FILENAME__=parser.c $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/bsc.dir/bsc/parser.c.o   -c /home/ethan/Desktop/bsc/src/bsc/parser.c
-
-CMakeFiles/bsc.dir/bsc/parser.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/bsc.dir/bsc/parser.c.i"
-	/usr/bin/cc  $(C_DEFINES) -D__FILENAME__=parser.c $(C_INCLUDES) $(C_FLAGS) -E /home/ethan/Desktop/bsc/src/bsc/parser.c > CMakeFiles/bsc.dir/bsc/parser.c.i
-
-CMakeFiles/bsc.dir/bsc/parser.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/bsc.dir/bsc/parser.c.s"
-	/usr/bin/cc  $(C_DEFINES) -D__FILENAME__=parser.c $(C_INCLUDES) $(C_FLAGS) -S /home/ethan/Desktop/bsc/src/bsc/parser.c -o CMakeFiles/bsc.dir/bsc/parser.c.s
-
-CMakeFiles/bsc.dir/bsc/parser.c.o.requires:
-
-.PHONY : CMakeFiles/bsc.dir/bsc/parser.c.o.requires
-
-CMakeFiles/bsc.dir/bsc/parser.c.o.provides: CMakeFiles/bsc.dir/bsc/parser.c.o.requires
-	$(MAKE) -f CMakeFiles/bsc.dir/build.make CMakeFiles/bsc.dir/bsc/parser.c.o.provides.build
-.PHONY : CMakeFiles/bsc.dir/bsc/parser.c.o.provides
-
-CMakeFiles/bsc.dir/bsc/parser.c.o.provides.build: CMakeFiles/bsc.dir/bsc/parser.c.o
-
-
-CMakeFiles/bsc.dir/bsc/lexer.c.o: CMakeFiles/bsc.dir/flags.make
-CMakeFiles/bsc.dir/bsc/lexer.c.o: /home/ethan/Desktop/bsc/src/bsc/lexer.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ethan/Desktop/bsc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object CMakeFiles/bsc.dir/bsc/lexer.c.o"
-	/usr/bin/cc  $(C_DEFINES) -D__FILENAME__=lexer.c $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/bsc.dir/bsc/lexer.c.o   -c /home/ethan/Desktop/bsc/src/bsc/lexer.c
-
-CMakeFiles/bsc.dir/bsc/lexer.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/bsc.dir/bsc/lexer.c.i"
-	/usr/bin/cc  $(C_DEFINES) -D__FILENAME__=lexer.c $(C_INCLUDES) $(C_FLAGS) -E /home/ethan/Desktop/bsc/src/bsc/lexer.c > CMakeFiles/bsc.dir/bsc/lexer.c.i
-
-CMakeFiles/bsc.dir/bsc/lexer.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/bsc.dir/bsc/lexer.c.s"
-	/usr/bin/cc  $(C_DEFINES) -D__FILENAME__=lexer.c $(C_INCLUDES) $(C_FLAGS) -S /home/ethan/Desktop/bsc/src/bsc/lexer.c -o CMakeFiles/bsc.dir/bsc/lexer.c.s
-
-CMakeFiles/bsc.dir/bsc/lexer.c.o.requires:
-
-.PHONY : CMakeFiles/bsc.dir/bsc/lexer.c.o.requires
-
-CMakeFiles/bsc.dir/bsc/lexer.c.o.provides: CMakeFiles/bsc.dir/bsc/lexer.c.o.requires
-	$(MAKE) -f CMakeFiles/bsc.dir/build.make CMakeFiles/bsc.dir/bsc/lexer.c.o.provides.build
-.PHONY : CMakeFiles/bsc.dir/bsc/lexer.c.o.provides
-
-CMakeFiles/bsc.dir/bsc/lexer.c.o.provides.build: CMakeFiles/bsc.dir/bsc/lexer.c.o
-
-
 # Object files for target bsc
 bsc_OBJECTS = \
 "CMakeFiles/bsc.dir/bsc/vector.c.o" \
-"CMakeFiles/bsc.dir/bsc/main.c.o" \
-"CMakeFiles/bsc.dir/bsc/keywords.c.o" \
-"CMakeFiles/bsc.dir/bsc/keywords/let.c.o" \
+"CMakeFiles/bsc.dir/bsc/lexer.c.o" \
 "CMakeFiles/bsc.dir/bsc/parser.c.o" \
-"CMakeFiles/bsc.dir/bsc/lexer.c.o"
+"CMakeFiles/bsc.dir/bsc/keywords/let.c.o" \
+"CMakeFiles/bsc.dir/bsc/main.c.o" \
+"CMakeFiles/bsc.dir/bsc/keywords.c.o"
 
 # External object files for target bsc
 bsc_EXTERNAL_OBJECTS =
 
 bsc: CMakeFiles/bsc.dir/bsc/vector.c.o
+bsc: CMakeFiles/bsc.dir/bsc/lexer.c.o
+bsc: CMakeFiles/bsc.dir/bsc/parser.c.o
+bsc: CMakeFiles/bsc.dir/bsc/keywords/let.c.o
 bsc: CMakeFiles/bsc.dir/bsc/main.c.o
 bsc: CMakeFiles/bsc.dir/bsc/keywords.c.o
-bsc: CMakeFiles/bsc.dir/bsc/keywords/let.c.o
-bsc: CMakeFiles/bsc.dir/bsc/parser.c.o
-bsc: CMakeFiles/bsc.dir/bsc/lexer.c.o
 bsc: CMakeFiles/bsc.dir/build.make
 bsc: CMakeFiles/bsc.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/ethan/Desktop/bsc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Linking C executable bsc"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/ethan/lang/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Linking C executable bsc"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/bsc.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -230,11 +230,11 @@ CMakeFiles/bsc.dir/build: bsc
 .PHONY : CMakeFiles/bsc.dir/build
 
 CMakeFiles/bsc.dir/requires: CMakeFiles/bsc.dir/bsc/vector.c.o.requires
+CMakeFiles/bsc.dir/requires: CMakeFiles/bsc.dir/bsc/lexer.c.o.requires
+CMakeFiles/bsc.dir/requires: CMakeFiles/bsc.dir/bsc/parser.c.o.requires
+CMakeFiles/bsc.dir/requires: CMakeFiles/bsc.dir/bsc/keywords/let.c.o.requires
 CMakeFiles/bsc.dir/requires: CMakeFiles/bsc.dir/bsc/main.c.o.requires
 CMakeFiles/bsc.dir/requires: CMakeFiles/bsc.dir/bsc/keywords.c.o.requires
-CMakeFiles/bsc.dir/requires: CMakeFiles/bsc.dir/bsc/keywords/let.c.o.requires
-CMakeFiles/bsc.dir/requires: CMakeFiles/bsc.dir/bsc/parser.c.o.requires
-CMakeFiles/bsc.dir/requires: CMakeFiles/bsc.dir/bsc/lexer.c.o.requires
 
 .PHONY : CMakeFiles/bsc.dir/requires
 
@@ -243,6 +243,6 @@ CMakeFiles/bsc.dir/clean:
 .PHONY : CMakeFiles/bsc.dir/clean
 
 CMakeFiles/bsc.dir/depend:
-	cd /home/ethan/Desktop/bsc/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/ethan/Desktop/bsc/src /home/ethan/Desktop/bsc/src /home/ethan/Desktop/bsc/build /home/ethan/Desktop/bsc/build /home/ethan/Desktop/bsc/build/CMakeFiles/bsc.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/ethan/lang/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/ethan/lang/src /home/ethan/lang/src /home/ethan/lang/build /home/ethan/lang/build /home/ethan/lang/build/CMakeFiles/bsc.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/bsc.dir/depend
 

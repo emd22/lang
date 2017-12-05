@@ -6,21 +6,21 @@
 
 #IncludeRegexTransform: 
 
-/home/ethan/Desktop/bsc/src/../include/bsc/keywords.h
+/home/ethan/lang/src/../include/bsc/keywords.h
 
-/home/ethan/Desktop/bsc/src/../include/bsc/keywords/let.h
+/home/ethan/lang/src/../include/bsc/keywords/let.h
 
-/home/ethan/Desktop/bsc/src/../include/bsc/lexer.h
+/home/ethan/lang/src/../include/bsc/lexer.h
 vector.h
 -
 
-/home/ethan/Desktop/bsc/src/../include/bsc/parser.h
+/home/ethan/lang/src/../include/bsc/parser.h
 vector.h
 -
 
-/home/ethan/Desktop/bsc/src/../include/bsc/vector.h
+/home/ethan/lang/src/../include/bsc/vector.h
 
-/home/ethan/Desktop/bsc/src/bsc/keywords.c
+/home/ethan/lang/src/bsc/keywords.c
 keywords/let.h
 -
 keywords.h
@@ -28,13 +28,13 @@ keywords.h
 string.h
 -
 
-/home/ethan/Desktop/bsc/src/bsc/keywords/let.c
+/home/ethan/lang/src/bsc/keywords/let.c
 keywords/let.h
 -
 stdlib.h
 -
 
-/home/ethan/Desktop/bsc/src/bsc/lexer.c
+/home/ethan/lang/src/bsc/lexer.c
 lexer.h
 -
 string.h
@@ -44,7 +44,7 @@ stdio.h
 stdlib.h
 -
 
-/home/ethan/Desktop/bsc/src/bsc/main.c
+/home/ethan/lang/src/bsc/main.c
 keywords/let.h
 -
 parser.h
@@ -60,7 +60,7 @@ string.h
 stdlib.h
 -
 
-/home/ethan/Desktop/bsc/src/bsc/parser.c
+/home/ethan/lang/src/bsc/parser.c
 parser.h
 -
 lexer.h
@@ -70,7 +70,7 @@ vector.h
 string.h
 -
 
-/home/ethan/Desktop/bsc/src/bsc/vector.c
+/home/ethan/lang/src/bsc/vector.c
 stdlib.h
 -
 stdio.h

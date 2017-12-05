@@ -48,6 +48,7 @@ char *cmp_str(char *str, int start_i, char *need) {
         }
         return NULL;
     }
+    printf("nope\n");
     return NULL;
 }
 
@@ -61,9 +62,8 @@ void lex(char *in, vector_t *out) {
     // const char inbetweens = {"=", "+"};
     // int size = 2;
     
-    const char *inbetweens    = "=+-";
-    const int  *betweens_size = {1, 1, 1};
-
+    char inbetweens[][24] = {"=", "+", "-"};
+    int  betweens_len = 3;
 
     unsigned dat_i = 0;
     unsigned len = strlen(in);
@@ -83,8 +83,9 @@ void lex(char *in, vector_t *out) {
         else {
             char tok2[4];
 
-            for (j = 0; j < 2; j++) {
-                if (cpy_str(cmp_str(in, i, [j]), tok2)) {
+            for (j = 0; j < betweens_len; j++) {
+                printf("s:%s\n",cmp_str(in, i, inbetweens[j]));
+                if (strcpy(cmp_str(in, i, inbetweens[j]), tok2) != NULL) {
                     vector_add(out, tok2);
                 }
             }

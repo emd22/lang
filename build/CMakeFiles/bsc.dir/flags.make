@@ -6,17 +6,17 @@ C_FLAGS =   -g
 
 C_DEFINES = 
 
-C_INCLUDES = -I/home/ethan/Desktop/bsc/src/../include/bsc 
+C_INCLUDES = -I/home/ethan/lang/src/../include/bsc 
 
 # Custom defines: CMakeFiles/bsc.dir/bsc/vector.c.o_DEFINES = __FILENAME__=vector.c
+
+# Custom defines: CMakeFiles/bsc.dir/bsc/lexer.c.o_DEFINES = __FILENAME__=lexer.c
+
+# Custom defines: CMakeFiles/bsc.dir/bsc/parser.c.o_DEFINES = __FILENAME__=parser.c
+
+# Custom defines: CMakeFiles/bsc.dir/bsc/keywords/let.c.o_DEFINES = __FILENAME__=let.c
 
 # Custom defines: CMakeFiles/bsc.dir/bsc/main.c.o_DEFINES = __FILENAME__=main.c
 
 # Custom defines: CMakeFiles/bsc.dir/bsc/keywords.c.o_DEFINES = __FILENAME__=keywords.c
-
-# Custom defines: CMakeFiles/bsc.dir/bsc/keywords/let.c.o_DEFINES = __FILENAME__=let.c
-
-# Custom defines: CMakeFiles/bsc.dir/bsc/parser.c.o_DEFINES = __FILENAME__=parser.c
-
-# Custom defines: CMakeFiles/bsc.dir/bsc/lexer.c.o_DEFINES = __FILENAME__=lexer.c
 
